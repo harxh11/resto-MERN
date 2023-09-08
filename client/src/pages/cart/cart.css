@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    padding: 100px 120px 0 120px;
+}
+
+.cart-heading{
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.body p{
+    font-size: 1.5rem;
+}
+
+.grid-left {
+    margin-right: 10px;
+}
+
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 2.45fr 1.45fr;
+    padding: 10px 0;
+    }
+
+
+.left-heading h1{
+    color: green;
+}
+
+
+
+.cards-container {
+    margin: 20px 0;
+    height: 60vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.product-card {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.product-img {
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+.product-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.stars {
+    color: green;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.product-details {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.product-pricing {
+    display: flex;
+}
+
+.product-count {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.product-count a {
+    margin: 0 15px;
+}
+
+.product-details p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+
+.product-details .links {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.product-details a {
+    margin-right: 10px;
+}
+
+
+/* ---------------Checkout-------------- */
+
+.right-heading {
+    color: green;
+    font-size: 2.3rem;
+}
+
+.grid-right {
+    margin-left: 30px;
+    /* position: fixed;
+    right: 100px;
+    width: 30%; */
+}
+
+.right-body {
+    padding-top: 30px;
+}
+
+.promo-section {
+    margin-bottom: 20px;
+}
+
+.promo-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-section h2 {
+    color: green;
+    margin-bottom: 5px;
+}
+
+.promo-section input {
+    border: 1px solid gray;
+    padding: 5px;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: none;
+}
+
+.promo-section button {
+    width: 30%;
+    color: white;
+    background-color: #27ae60;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 3px;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gtotal-section {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gtotal-section h2 {
+    font-size: 2rem;
+}
+
+.proceed {
+    margin: 20px 0;
+}
+
+.proceed button{
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+.right-body button:hover {
+    cursor: pointer;
+    background-color: #1e8448;
+    transition: 0.3s;
+}
