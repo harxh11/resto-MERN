@@ -148,7 +148,14 @@ export const Login = () => {
                             {obj.password === cPass ? <button onClick={handleSubmit} className='submit-btn'>Register</button> : <button className='noSubmit-btn submit-btn'>Register</button>}
                         </form>
                     </div>
-                    : "" }
+                    : <div>
+                    <p className='welcome'>Welcome {gUsername}!</p>
+                    <p className='welcome'>You need to register..</p>
+
+                    <label className='login-label' htmlFor=''>Create a Password: </label><br />
+                    <input type="password" name='gPassword' className='login-input' onChange={(event) => {setGPassword(event.target.value)}}/> <br />
+                    <button className='submit-btn' onClick={handleGoogleRegister}>Register</button>
+                </div> }
                 </div>
 
 
@@ -164,24 +171,18 @@ export const Login = () => {
                             <button className='submit-btn' onClick={handlelogin}>Login</button>
                         </form>
                     </div>
-                    <div className='other-logins'>
-                        <p>Continue with other login methods: </p>
                         { gUsercheck ? 
-                        <div>
-                            <p className='welcome'>Welcome {gUsername}!</p>
-                            <p className='welcome'>You need to register..</p>
-
-                            <label className='login-label' htmlFor=''>Create a Password: </label><br />
-                            <input type="password" name='gPassword' className='login-input' onChange={(event) => {setGPassword(event.target.value)}}/> <br />
-                            <button className='submit-btn' onClick={handleGoogleRegister}>Register</button>
-                        </div> :  
+                        "" :  
+                        <div className='other-logins'>
+                        <p>Continue with other login methods: </p>
+                    
                         <div className='other-auth'>
                             <GoogleButton onClick={signInWithGoogle} /> 
                             <br />
                             <FacebookLogin className="facebook" appId="1088597931155576" autoLoad={true} fields="name,email,picture" callback={responseFacebook}/>
                     
-                        </div>}
-                    </div>
+                        </div>
+                    </div>}
                     
                     
                 </div>

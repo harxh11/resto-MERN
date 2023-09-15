@@ -36,4 +36,16 @@ router1.post("/", async (req,res) => {
     }
 });
 
+router1.get("/getUsers", async (req, res) => {
+    try {
+        const users = await UserModel.find({});
+        res.json({users, message: "User retrieved successfully :)"});
+        
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+
+
 export { router1 as UserRouter };

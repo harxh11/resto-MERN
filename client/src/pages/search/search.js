@@ -1,16 +1,20 @@
 import "./search.css";
+import { useEffect } from "react";
+
+// useEffect(() => {
+
+// }, [])
 
 
 export const Search = () => {
     return (
         <>
-            <div className="body">
+            <div className="search-body">
                 <div className="s-body">    
                     <div className="s-main">
                         <input type="text" placeholder="Search for food and dishes..."/>
                         <button><img src={require("../../static/images/search.png")} alt="" /></button>
                     </div>
-                
                     <div className="options">
                         <h1>Popular Cuisines</h1>
                         <div className="s-cards-container">
@@ -67,6 +71,162 @@ export const Search = () => {
                                     <img src={require("../../static/images/dish-1.png")} alt="" />
                                 </div>
                                 <p>Burger</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="s-products">
+                        <div className="s-products-container">
+                            {/* CARD */}
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="s-product-card">
+                                <div className="s-product-details">
+                                    <span>BESTSELLER</span>
+                                    <h2>Food-Product</h2>
+                                    <h3>$27.34</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reprehenderit beatae saepe quidem, doloremque fugit?</p>
+                                    <span className="s-more">MORE</span>
+                                </div>
+                                <div className="s-product-img">
+                                    <div className="s-product-img-bottom">
+                                        <img src={require("../../static/images/menu-1.jpg")} alt="" />
+                                        <button>ADD+</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

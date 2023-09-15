@@ -2,10 +2,42 @@ import "./cart.css";
 
 
 
+export const Product = (props) => {
+    return(
+        <div className="product-card">
+            <img className="product-img" src={require("../../static/images/menu-1.jpg")} alt="" />
+            <div className="product-details">
+                <div className="product-head">
+                    <h1>{props.name}</h1>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum deserunt voluptatibus facilis cumque! Assumenda omnis nobis aperiam vitae temporibus.</p>
+                <div className="product-pricing">
+                    <h1>${props.price}</h1>
+                    <div className="product-count">
+                        <a href="">+</a>1<a href="">-</a>
+                    </div>
+                </div>
+                <div className="links">
+                    <a href="">Remove</a><a href="">Edit</a>
+                </div>
+            </div>
+        </div>
+
+    );
+}
+
 export const Cart = () => {
     return (
         <>
-            <div className="body">
+            <div className="cart-body">
                 <h1 className="cart-heading">Cart</h1>
                 <div className="grid-container">
                     <div className="grid-left">
@@ -16,90 +48,10 @@ export const Cart = () => {
                         <div className="cards-section">
                             <div className="cards-container">
                                 
-                            <div className="product-card">
-                                    <img className="product-img" src={require("../../static/images/menu-1.jpg")} alt="" />
-                                    <div className="product-details">
-                                        <div className="product-head">
-                                            <h1>Product Name</h1>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                        </div>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum deserunt voluptatibus facilis cumque! Assumenda omnis nobis aperiam vitae temporibus.</p>
-                                        <div className="product-pricing">
-                                            <h1>$102.12</h1>
-                                            <div className="product-count">
-                                                <a href="">+</a>1<a href="">-</a>
-                                            </div>
-                                        </div>
-                                        <div className="links">
-                                            <a href="">Remove</a><a href="">Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className="product-card">
-                                    <div className="pro-img-container">
-                                        <img className="product-img" src={require("../../static/images/menu-3.jpg")} alt="" />
-                                    </div>
-                                    <div className="product-details">
-                                        <div className="product-head">
-                                            <h1>Product Name</h1>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                        </div>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum deserunt voluptatibus facilis cumque! Assumenda omnis nobis aperiam vitae temporibus.</p>
-                                        <div className="product-pricing">
-                                            <h1>$102.12</h1>
-                                            <div className="product-count">
-                                                <a href="">+</a>1<a href="">-</a>
-                                            </div>
-                                        </div>
-                                        <div className="links">
-                                            <a href="">Remove</a><a href="">Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className="product-card">
-                                    <img className="product-img" src={require("../../static/images/menu-2.jpg")} alt="" />
-                                    <div className="product-details">
-                                        <div className="product-head">
-                                            <h1>Product Name</h1>
-                                            <div class="stars">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum deserunt voluptatibus facilis cumque! Assumenda omnis nobis aperiam vitae temporibus.</p>
-                                        <div className="product-pricing">
-                                            <h1>$102.12</h1>
-                                            <div className="product-count">
-                                                <a href="">+</a>1<a href="">-</a>
-                                            </div>
-                                        </div>
-                                        <div className="links">
-                                            <a href="">Remove</a><a href="">Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Product name="Biryani" price={234.2} />
+                                <Product name="Biryani" price={234.2} />
+                                <Product name="Biryani" price={234.2} />
+                                <Product name="Biryani" price={234.2} />
 
                             </div>
                         </div>
