@@ -5,7 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Navbar = () => {
-    const user = window.localStorage.getItem("userID");
+
+
+    const userid = window.localStorage.getItem("userID");
+
     const navigate = useNavigate();
 
     function handleLogout() {
@@ -27,7 +30,7 @@ export const Navbar = () => {
             <a href="/">About</a>
             <a href="/">Menu</a>
             <a href="/">Review</a>
-            { user ? <a href="/login" onClick={handleLogout}>Logout</a> : <a href="/login">Login</a>}
+            { userid ? <a href="/login" onClick={handleLogout}>Logout</a> : <a href="/login">Login</a>}
             
         </nav>
 

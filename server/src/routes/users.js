@@ -36,11 +36,13 @@ router1.post("/", async (req,res) => {
     }
 });
 
-router1.get("/getUsers", async (req, res) => {
+router1.get("/getUser", async (req, res) => {
     try {
-        const users = await UserModel.find({});
-        res.json({users, message: "User retrieved successfully :)"});
-        
+        const userID = req.body;
+        // const user = await UserModel.findOne({_id: userID});
+
+        // res.json({user, message: "User retrieved successfully :)"});
+        console.log(req.body);
     } catch (err) {
         console.error(err);
     }

@@ -35,4 +35,4 @@ const DishesSchema = new mongoose.Schema({
 });
 
 
-export default DishesSchema = mongoose.model("dishes", DishesModel);
+export const DishesModel = mongoose.model("dishes", DishesSchema);
