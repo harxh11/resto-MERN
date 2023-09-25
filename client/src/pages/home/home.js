@@ -2,9 +2,6 @@ import axios from "axios";
 import "../../static/css/style.css";
 import { useEffect, useState } from "react";
 
-
-
-
 export const Home = () => {
 
     const [dishes, setDishes] = useState([]);
@@ -18,13 +15,6 @@ export const Home = () => {
 
         getDishes();
     }, []);
-
-    const handleCart = async (event) => {
-        event.preventDefault();
-        setUserID(window.localStorage.getItem("userID"));
-        const response = await axios.get("http://localhost:3001/users/getUser", {userID: userID});
-        console.log(userID);
-    }
 
     return(
         <>
@@ -154,7 +144,7 @@ export const Home = () => {
                                         </div>
                                         <h3>{dish.name}</h3>
                                         <p>{dish.description}</p>
-                                        <a href="#" class="btn" onClick={handleCart}>add to cart</a>
+                                        <a href="#" class="btn">add to cart</a>
                                         <span class="price">${dish.price}</span>
                                     </div>
                                 </div>

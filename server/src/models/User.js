@@ -22,15 +22,15 @@ const UserSchema = mongoose.Schema({
         required: false
     },
     
-    favorites: {
+    favorites: [{
         type: mongoose.Schema.Types.ObjectId, 
         ref:"recipes"
-    },
+    }],
 
-    cart: {
+    cart: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "recipes"
-    },
+    }],
 
     admin: {
         type: String,
